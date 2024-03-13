@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperaturumrechner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Temperaturumrechner</h1>
+        <form id="temperatureForm">
+            <label for="temperature">Temperatur:</label>
+            <input type="number" id="temperature" name="temperature" step="0.1" required>
+            
+            <label for="unit">Einheit:</label>
+            <select id="unit" name="unit">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+
+            <button type="submit" id="submitButton" class="disabled" disabled>Umrechnen</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
